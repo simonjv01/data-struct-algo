@@ -16,4 +16,17 @@ def locate_card(cards, query):
 cards = [13, 11, 10, 7, 4, 3, 1, 0]
 query = 10
 
-print(locate_card(cards, query))  # Output: 3
+cardResult = print(locate_card(cards, query))  # Output: 2
+
+# Testing for the test case
+test = {
+    "cards": [13, 11, 10, 7, 4, 3, 1, 0],
+    "query": 10
+}
+
+
+testResult = print(locate_card(test["cards"], test["query"]))  # Output: 2
+
+finalResult = testResult == cardResult
+
+print(finalResult)
